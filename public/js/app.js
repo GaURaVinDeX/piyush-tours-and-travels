@@ -8,8 +8,8 @@
 let appData = {
   settings: {
     businessName: "Piyush tours and travels",
-    phone: "+91 98200 87654",
-    whatsapp: "919820087654",
+    phone: "+91 97691 32932",
+    whatsapp: "919769132932",
     email: "booking@piyushtoursandtravels.com",
     address: "Andheri East, Western Express Highway, Mumbai 400069",
     driverAllowancePerDay: 400,
@@ -46,8 +46,8 @@ let currentBookingState = {
 const DEFAULT_FALLBACK_DATA = {
   settings: {
     businessName: "Piyush tours and travels",
-    phone: "+91 98200 87654",
-    whatsapp: "919820087654",
+    phone: "+91 97691 32932",
+    whatsapp: "919769132932",
     driverAllowancePerDay: 400,
     minKmPerDay: 250,
     currency: "₹"
@@ -153,8 +153,8 @@ async function loadData() {
 
 // Update Phone and WhatsApp anchor links across the page
 function updateContactLinks() {
-  const phone = appData.settings.phone || '+91 98200 87654';
-  const whatsapp = appData.settings.whatsapp || '919820087654';
+  const phone = appData.settings.phone || '+91 97691 32932';
+  const whatsapp = appData.settings.whatsapp || '919769132932';
   const cleanPhone = phone.replace(/[^\d+]/g, '');
 
   document.querySelectorAll('.js-phone-text').forEach(el => el.textContent = phone);
@@ -602,7 +602,7 @@ ${leadPayload.returnDate ? `🔄 *Return Date:* ${leadPayload.returnDate} (${lea
 ----------------------------------------
 _Please send driver & car details to confirm booking._`;
 
-  const whatsappNumber = appData.settings.whatsapp || '919820087654';
+  const whatsappNumber = appData.settings.whatsapp || '919769132932';
   const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(waText)}`;
 
   if (actionType === 'whatsapp') {

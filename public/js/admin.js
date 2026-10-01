@@ -725,8 +725,8 @@ function renderSettingsForm() {
   };
 
   setValue('setting-business-name', s.businessName || 'Piyush tours and travels');
-  setValue('setting-phone', s.phone || '+91 98200 87654');
-  setValue('setting-whatsapp', s.whatsapp || '919820087654');
+  setValue('setting-phone', s.phone || '+91 97691 32932');
+  setValue('setting-whatsapp', s.whatsapp || '919769132932');
   setValue('setting-email', s.email || 'booking@piyushtoursandtravels.com');
   setValue('setting-address', s.address || 'Andheri East, Mumbai');
   setValue('setting-driver-allowance', s.driverAllowancePerDay || 400);
