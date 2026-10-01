@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="swiftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background Glow -->
+  <ellipse cx="200" cy="175" rx="160" ry="12" fill="#0f172a" opacity="0.15"/>
+  <!-- Car Body (Hatchback profile) -->
+  <g filter="url(#shadow)">
+    <!-- Cabin & Roof -->
+    <path d="M90 120 L130 65 L240 60 L290 95 L330 110 L335 140 L65 140 L65 125 Z" fill="url(#carBody)"/>
+    <!-- Windows -->
+    <path d="M140 70 L235 66 L235 105 L125 105 Z" fill="#1e293b" opacity="0.85"/>
+    <path d="M245 68 L285 96 L285 105 L245 105 Z" fill="#1e293b" opacity="0.85"/>
+    <!-- Windshield accent -->
+    <path d="M142 72 L200 70 L195 102 L132 102 Z" fill="#38bdf8" opacity="0.25"/>
+    <!-- Front Hood Slope -->
+    <path d="M290 95 L345 115 L350 142 L330 142 Z" fill="#e2e8f0"/>
+    <!-- Headlight -->
+    <path d="M335 118 L350 125 L342 135 L328 130 Z" fill="#fbbf24"/>
+    <!-- Taillight -->
+    <path d="M64 110 L75 112 L72 130 L64 128 Z" fill="#ef4444"/>
+    <!-- Door Handle -->
+    <rect x="200" y="112" width="22" height="4" rx="2" fill="#64748b"/>
+    <!-- Side Accent Line -->
+    <path d="M75 125 Q200 120 330 132" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+    <!-- Wheels Cutout -->
+    <circle cx="120" cy="142" r="28" fill="#0f172a"/>
+    <circle cx="280" cy="142" r="28" fill="#0f172a"/>
+    <!-- Alloy Rim Front -->
+    <circle cx="280" cy="142" r="18" fill="#94a3b8"/>
+    <circle cx="280" cy="142" r="12" fill="#334155"/>
+    <circle cx="280" cy="142" r="5" fill="#f8fafc"/>
+    <!-- Alloy Rim Rear -->
+    <circle cx="120" cy="142" r="18" fill="#94a3b8"/>
+    <circle cx="120" cy="142" r="12" fill="#334155"/>
+    <circle cx="120" cy="142" r="5" fill="#f8fafc"/>
+  </g>
+  <!-- Commercial Yellow Plate Badge -->
+  <rect x="330" y="136" width="18" height="6" rx="1" fill="#eab308" stroke="#000" stroke-width="0.5"/>
+</svg>

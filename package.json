@@ -1,0 +1,21 @@
+{
+  "name": "piyush-tours-and-travels",
+  "version": "1.0.0",
+  "description": "One-page car rental website with Admin Panel for Piyush tours and travels, Mumbai",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  },
+  "keywords": [
+    "car-rental",
+    "mumbai-cabs",
+    "tours-and-travels",
+    "outstation-cabs"
+  ],
+  "author": "Piyush Tours and Travels",
+  "license": "ISC"
+}

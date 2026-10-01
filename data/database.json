@@ -1,0 +1,293 @@
+{
+  "settings": {
+    "businessName": "Piyush tours and travels",
+    "tagline": "Trusted Outstation Cabs & Car Rental in Mumbai",
+    "phone": "+91 98200 87654",
+    "whatsapp": "919820087654",
+    "email": "piyushtoursandtravelsmumbai@gmail.com",
+    "address": "Shop No. 12, Western Express Highway Metro Station, Andheri East, Mumbai 400069",
+    "driverAllowancePerDay": 400,
+    "nightAllowance": 250,
+    "adminPassword": "admin",
+    "minKmPerDay": 250,
+    "currency": "₹",
+    "termsNote": "Toll charges, state entry taxes, and parking fees are extra as per actual receipts. 1 Day means calendar day (6:00 AM to 11:59 PM). A/C operates continuously except in hilly areas on high engine load.",
+    "extraChargesToggleDefault": {
+      "ac": true,
+      "fuelIncluded": true
+    }
+  },
+  "cars": [
+    {
+      "id": "car-hatchback",
+      "name": "Maruti Swift / WagonR",
+      "category": "Hatchback",
+      "ratePerKm": 11,
+      "seating": "4 + 1 Driver",
+      "luggage": "2 Large Bags",
+      "minKmPerDay": 250,
+      "hourlyPackagePrice": 1800,
+      "hourlyPackageHours": 8,
+      "hourlyPackageKm": 80,
+      "airportBaseFare": 900,
+      "ac": true,
+      "fuelType": "CNG / Petrol",
+      "image": "images/swift.svg",
+      "description": "Economical & compact cab for city rides and budget outstation travel.",
+      "active": true
+    },
+    {
+      "id": "car-sedan",
+      "name": "Maruti Dzire / Toyota Etios",
+      "category": "Sedan",
+      "ratePerKm": 13,
+      "seating": "4 + 1 Driver",
+      "luggage": "3 Large Bags",
+      "minKmPerDay": 250,
+      "hourlyPackagePrice": 2200,
+      "hourlyPackageHours": 8,
+      "hourlyPackageKm": 80,
+      "airportBaseFare": 1100,
+      "ac": true,
+      "fuelType": "Petrol / Diesel",
+      "image": "images/dzire.svg",
+      "description": "Most popular choice! Comfortable legroom, boot space, and smooth highway ride.",
+      "active": true
+    },
+    {
+      "id": "car-suv",
+      "name": "Maruti Ertiga / Kia Carens",
+      "category": "SUV",
+      "ratePerKm": 16,
+      "seating": "6 + 1 Driver",
+      "luggage": "4 Large Bags",
+      "minKmPerDay": 300,
+      "hourlyPackagePrice": 2800,
+      "hourlyPackageHours": 8,
+      "hourlyPackageKm": 80,
+      "airportBaseFare": 1600,
+      "ac": true,
+      "fuelType": "Diesel / CNG",
+      "image": "images/ertiga.svg",
+      "description": "Spacious 7-seater for family getaways, Lonavala/Pune weekend trips, and luggage.",
+      "active": true
+    },
+    {
+      "id": "car-innova",
+      "name": "Toyota Innova Crysta",
+      "category": "Innova Crysta",
+      "ratePerKm": 21,
+      "seating": "7 + 1 Driver",
+      "luggage": "5 Large Bags",
+      "minKmPerDay": 300,
+      "hourlyPackagePrice": 3600,
+      "hourlyPackageHours": 8,
+      "hourlyPackageKm": 80,
+      "airportBaseFare": 2200,
+      "ac": true,
+      "fuelType": "Diesel",
+      "image": "images/innova.svg",
+      "description": "Luxury & supreme comfort. Captain seats, chilled AC, perfect for Shirdi, Goa, or business trips.",
+      "active": true
+    },
+    {
+      "id": "car-traveller",
+      "name": "Force Tempo Traveller",
+      "category": "Traveller",
+      "ratePerKm": 28,
+      "seating": "13 / 17 + 1 Driver",
+      "luggage": "10+ Large Bags",
+      "minKmPerDay": 300,
+      "hourlyPackagePrice": 5200,
+      "hourlyPackageHours": 8,
+      "hourlyPackageKm": 80,
+      "airportBaseFare": 3500,
+      "ac": true,
+      "fuelType": "Diesel",
+      "image": "images/traveller.svg",
+      "description": "Ideal for wedding groups, corporate outings, pilgrimage & big family tours.",
+      "active": true
+    }
+  ],
+  "destinations": [
+    {
+      "id": "dest-pune",
+      "name": "Pune",
+      "km": 150,
+      "duration": "3 - 3.5 hrs",
+      "popular": true,
+      "description": "Via Mumbai-Pune Expressway"
+    },
+    {
+      "id": "dest-lonavala",
+      "name": "Lonavala / Khandala",
+      "km": 85,
+      "duration": "2 hrs",
+      "popular": true,
+      "description": "Top monsoon & weekend getaway"
+    },
+    {
+      "id": "dest-nashik",
+      "name": "Nashik",
+      "km": 170,
+      "duration": "3.5 hrs",
+      "popular": true,
+      "description": "Wine capital & Trimbakeshwar pilgrimage"
+    },
+    {
+      "id": "dest-shirdi",
+      "name": "Shirdi Sai Baba Temple",
+      "km": 245,
+      "duration": "4.5 hrs",
+      "popular": true,
+      "description": "Direct highway route for holy darshan"
+    },
+    {
+      "id": "dest-mahabaleshwar",
+      "name": "Mahabaleshwar / Panchgani",
+      "km": 260,
+      "duration": "5.5 hrs",
+      "popular": true,
+      "description": "Scenic hill station with strawberry farms"
+    },
+    {
+      "id": "dest-alibaug",
+      "name": "Alibaug",
+      "km": 100,
+      "duration": "2.5 hrs",
+      "popular": true,
+      "description": "Via Atal Setu (MTHL) / Pen"
+    },
+    {
+      "id": "dest-matheran",
+      "name": "Matheran (Neral Taxi Stand)",
+      "km": 85,
+      "duration": "2 hrs",
+      "popular": false,
+      "description": "Eco-friendly hill station base"
+    },
+    {
+      "id": "dest-lavasa",
+      "name": "Lavasa",
+      "km": 190,
+      "duration": "4.5 hrs",
+      "popular": false,
+      "description": "Planned lakeside hill town"
+    },
+    {
+      "id": "dest-trimbakeshwar",
+      "name": "Trimbakeshwar Jyotirlinga",
+      "km": 185,
+      "duration": "4 hrs",
+      "popular": false,
+      "description": "Holy Jyotirlinga pilgrimage"
+    },
+    {
+      "id": "dest-bhimashankar",
+      "name": "Bhimashankar Jyotirlinga",
+      "km": 215,
+      "duration": "5 hrs",
+      "popular": false,
+      "description": "Jyotirlinga & nature reserve"
+    },
+    {
+      "id": "dest-surat",
+      "name": "Surat",
+      "km": 285,
+      "duration": "5 hrs",
+      "popular": false,
+      "description": "Via NH 48 corridor"
+    },
+    {
+      "id": "dest-goa",
+      "name": "Goa (North / South)",
+      "km": 590,
+      "duration": "10 - 11 hrs",
+      "popular": true,
+      "description": "Coastal beach holiday"
+    },
+    {
+      "id": "dest-kolhapur",
+      "name": "Kolhapur (Mahalaxmi Temple)",
+      "km": 380,
+      "duration": "7 hrs",
+      "popular": false,
+      "description": "Mahalaxmi Temple pilgrimage"
+    },
+    {
+      "id": "dest-vapi",
+      "name": "Vapi / Daman",
+      "km": 175,
+      "duration": "3.5 hrs",
+      "popular": false,
+      "description": "Beach & industrial zone"
+    },
+    {
+      "id": "dest-aurangabad",
+      "name": "Aurangabad / Sambhajinagar",
+      "km": 340,
+      "duration": "6 hrs",
+      "popular": false,
+      "description": "Ajanta & Ellora caves tour"
+    }
+  ],
+  "pickupLocations": [
+    "Mumbai Airport (Terminal 1 Domestic)",
+    "Mumbai Airport (Terminal 2 International)",
+    "Andheri (East / West)",
+    "Bandra / BKC",
+    "Borivali / Kandivali",
+    "Dadar / Prabhadevi",
+    "Thane / Mulund",
+    "Navi Mumbai (Vashi / Nerul / Panvel)",
+    "Colaba / Churchgate / Fort",
+    "Goregaon / Malad",
+    "Powai / Ghatkopar",
+    "Chembur / Kurla",
+    "Kalyan / Dombivli",
+    "Mira Road / Bhayandar",
+    "Other Mumbai Location (Specify below)"
+  ],
+  "leads": [
+    {
+      "id": "LEAD-1001",
+      "name": "Rahul Sharma",
+      "phone": "9819234567",
+      "pickup": "Andheri (East / West)",
+      "drop": "Pune",
+      "tripType": "One-Way",
+      "carId": "car-sedan",
+      "carName": "Maruti Dzire / Toyota Etios",
+      "km": 150,
+      "days": 1,
+      "date": "2026-10-05",
+      "time": "07:30 AM",
+      "returnDate": "",
+      "estimatedFare": 2350,
+      "driverAllowance": 400,
+      "status": "New",
+      "notes": "Flight arriving early morning, needs pickup from Andheri.",
+      "createdAt": "2026-10-01T10:15:00.000Z"
+    },
+    {
+      "id": "LEAD-1002",
+      "name": "Pooja Patil",
+      "phone": "9920876543",
+      "pickup": "Borivali / Kandivali",
+      "drop": "Shirdi Sai Baba Temple",
+      "tripType": "Round-Trip",
+      "carId": "car-innova",
+      "carName": "Toyota Innova Crysta",
+      "km": 600,
+      "days": 2,
+      "date": "2026-10-08",
+      "time": "05:00 AM",
+      "returnDate": "2026-10-09",
+      "estimatedFare": 13400,
+      "driverAllowance": 800,
+      "status": "Contacted",
+      "notes": "Family pilgrimage trip with parents.",
+      "createdAt": "2026-10-01T11:45:00.000Z"
+    }
+  ]
+}

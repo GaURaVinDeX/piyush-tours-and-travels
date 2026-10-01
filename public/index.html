@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piyush tours and travels | Car Rental & Outstation Cabs in Mumbai</title>
+  <meta name="description" content="Piyush tours and travels - Best car rental service in Mumbai. Instant price calculator, transparent per km rates, outstation cabs to Pune, Lonavala, Shirdi, Nashik, and Mumbai airport transfers.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="container notice-inner">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="notice-badge">24/7 Available</span>
+        <span>Trusted Car Rental &amp; Outstation Cab Service Starting from Mumbai</span>
+      </div>
+      <div class="notice-contacts">
+        <a href="tel:+919820087654" class="js-phone-link">
+          <span>📞</span> <span class="js-phone-text">+91 98200 87654</span>
+        </a>
+        <a href="https://wa.me/919820087654" target="_blank" class="js-whatsapp-link">
+          <span>💬</span> <span>WhatsApp Instant Quote</span>
+        </a>
+        <a href="/admin" style="font-size:0.75rem; color:#94a3b8; margin-left:8px;" title="Owner Admin Login">🔐 Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <img src="images/logo.svg" alt="Piyush tours and travels Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#instant-calculator">Book Cab</a></li>
+        <li><a href="#our-fleet">Fleet &amp; Price List</a></li>
+        <li><a href="#popular-routes">Popular Routes</a></li>
+        <li><a href="#why-choose-us">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact-footer">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="tel:+919820087654" class="btn btn-call btn-sm js-phone-link">
+          <span>📞</span> Call Now
+        </a>
+        <a href="https://wa.me/919820087654" target="_blank" class="btn btn-whatsapp btn-sm js-whatsapp-link">
+          <span>💬</span> WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Integrated Live Booking & Price Calculator -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Hero Headline & Brand Value -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>✨</span> Mumbai's Premier Car Rental Service
+          </div>
+          <h1 class="hero-title">
+            Car Rental in <span class="highlight">Mumbai</span> for Outstation &amp; Local Travel
+          </h1>
+          <p class="hero-subtitle">
+            Book reliable cabs starting from Mumbai to Pune, Lonavala, Shirdi, Nashik, Mahabaleshwar &amp; more. Transparent per KM billing with no hidden surprises.
+          </p>
+
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <span class="icon">⚡</span>
+              <span>Instant Fare Calculator</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="icon">🛡️</span>
+              <span>Sanitized Yellow-Plate Cabs</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="icon">👨‍✈️</span>
+              <span>Verified Polite Chauffeurs</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="icon">💰</span>
+              <span>Transparent Per-KM Rates</span>
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#instant-calculator" class="btn btn-primary btn-lg">
+              <span>🚕</span> Book Your Ride Now
+            </a>
+            <a href="https://wa.me/919820087654" target="_blank" class="btn btn-whatsapp btn-lg js-whatsapp-link">
+              <span>💬</span> Get WhatsApp Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Instant Fare Calculator & Booking Widget -->
+        <div class="booking-card" id="instant-calculator">
+          <div class="booking-header">
+            <h3><span>🚕</span> Instant Price Calculator</h3>
+            <span class="pulse-badge">Live Rates</span>
+          </div>
+
+          <div class="booking-body">
+            
+            <!-- Trip Type Selector -->
+            <div class="trip-type-tabs">
+              <button class="trip-tab-btn active" data-trip-type="one-way">One-Way</button>
+              <button class="trip-tab-btn" data-trip-type="round-trip">Round-Trip</button>
+              <button class="trip-tab-btn" data-trip-type="hourly">Hourly Rental</button>
+              <button class="trip-tab-btn" data-trip-type="airport">Airport Transfer</button>
+            </div>
+
+            <!-- Customer Information Form -->
+            <form id="booking-form" onsubmit="return false;">
+              
+              <!-- Customer Name & Mobile -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="cust-name">
+                    <span>Customer Name *</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">👤</span>
+                    <input type="text" id="cust-name" class="form-control" placeholder="Your Full Name" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cust-phone">
+                    <span>Mobile Number *</span>
+                    <span class="sub">+91</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">📱</span>
+                    <input type="tel" id="cust-phone" class="form-control" placeholder="10-digit number" maxlength="10" required />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pickup & Drop Locations -->
+              <div class="form-row">
+                
+                <!-- Fixed Mumbai Pickup Location with Sub-locations -->
+                <div class="form-group">
+                  <label class="form-label" id="pickup-field-label">
+                    <span>Pickup Location</span>
+                    <span class="mumbai-fixed-badge">MUMBAI</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">📍</span>
+                    <select id="calc-pickup-location" class="form-control form-select">
+                      <!-- Populated dynamically -->
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Drop Destination (Editable via Admin) -->
+                <div class="form-group" id="drop-location-group">
+                  <label class="form-label" for="calc-drop-location">
+                    <span>Drop / Destination *</span>
+                    <span class="sub">Auto-KM</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">🎯</span>
+                    <select id="calc-drop-location" class="form-control form-select">
+                      <!-- Populated dynamically with distance -->
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Hourly Package selector (Only shown for hourly rental) -->
+                <div class="form-group" id="hourly-package-group" style="display: none;">
+                  <label class="form-label">
+                    <span>Local Mumbai Package</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">⏱️</span>
+                    <select id="calc-hourly-package" class="form-control form-select">
+                      <option value="8hr-80km">8 Hours / 80 KM (Local Mumbai)</option>
+                      <option value="12hr-120km">12 Hours / 120 KM (Full Day Mumbai)</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Custom Address / Location Inputs (Conditional) -->
+              <div class="form-row" id="pickup-custom-box" style="display: none;">
+                <div class="form-group full-width">
+                  <input type="text" id="calc-pickup-custom" class="form-control" placeholder="Type your specific pickup address / landmark in Mumbai..." />
+                </div>
+              </div>
+
+              <div class="form-row" id="drop-custom-box" style="display: none;">
+                <div class="form-group">
+                  <input type="text" id="calc-drop-custom" class="form-control" placeholder="Enter Destination City..." />
+                </div>
+                <div class="form-group">
+                  <input type="number" id="calc-custom-km" class="form-control" placeholder="Est. Distance in KM (e.g. 150)" value="150" />
+                </div>
+              </div>
+
+              <!-- Date & Time Pickers -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="calc-pickup-date">
+                    <span>Pickup Date</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">📅</span>
+                    <input type="date" id="calc-pickup-date" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-pickup-time">
+                    <span>Pickup Time</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">⏰</span>
+                    <input type="time" id="calc-pickup-time" class="form-control" value="08:00" />
+                  </div>
+                </div>
+
+                <!-- Return Date (Only for Round-Trip) -->
+                <div class="form-group full-width" id="return-date-group" style="display: none;">
+                  <label class="form-label" for="calc-return-date">
+                    <span>Return Date (Round-Trip)</span>
+                    <span class="sub">Min 250 km/day</span>
+                  </label>
+                  <div class="input-with-icon">
+                    <span class="input-icon">🔄</span>
+                    <input type="date" id="calc-return-date" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Car Category Selector -->
+              <div class="form-group" style="margin-top: 6px;">
+                <label class="form-label">
+                  <span>Select Car Category</span>
+                  <span class="sub">Click to calculate</span>
+                </label>
+                <div class="car-selection-grid" id="car-selection-container">
+                  <!-- Populated dynamically via app.js -->
+                </div>
+              </div>
+
+              <!-- Extra Charges & Toggle Options -->
+              <div class="extra-options-bar">
+                <div class="toggle-item">
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="calc-toggle-ac" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <span>Chilled Air Condition (AC)</span>
+                </div>
+                <div style="color: #059669; font-weight: 700; font-size: 0.8rem;">
+                  ✓ Fuel Included
+                </div>
+                <div style="color: #64748b; font-size: 0.78rem;">
+                  Driver Allowance: ₹400/day
+                </div>
+              </div>
+
+              <!-- Fare Estimation Display Box -->
+              <div class="fare-estimate-box">
+                <div class="fare-calc-row">
+                  <span>Billable Distance:</span>
+                  <strong id="fare-display-km">150 KM</strong>
+                </div>
+                <div class="fare-calc-row">
+                  <span>Base Cab Fare:</span>
+                  <strong id="fare-display-base">₹1,950</strong>
+                </div>
+                <div class="fare-calc-row" id="fare-driver-row">
+                  <span>Driver Allowance:</span>
+                  <strong id="fare-display-driver">₹400</strong>
+                </div>
+                <div class="fare-calc-row total">
+                  <span>Estimated Total Fare:</span>
+                  <span class="price" id="fare-display-total">₹2,350</span>
+                </div>
+                <div class="fare-calc-note">
+                  <span>ℹ️</span>
+                  <span>Tolls, parking &amp; state entry permit taxes will be charged as per actual receipts.</span>
+                </div>
+              </div>
+
+              <!-- Call to Action Buttons -->
+              <div class="booking-actions">
+                <button type="button" class="btn btn-whatsapp btn-book-whatsapp" id="btn-book-whatsapp">
+                  <span>💬</span> Get Quote on WhatsApp Now
+                </button>
+                <button type="button" class="btn btn-secondary btn-book-direct" id="btn-book-direct">
+                  <span>📋</span> Submit Booking Request
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Our Fleet & Per KM Rates -->
+  <section class="section" id="our-fleet">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Transparent Pricing</span>
+        <h2 class="section-title">Our Fleet &amp; Price List (Per KM)</h2>
+        <p class="section-subtitle">
+          All our cabs are well-maintained, sanitized, and driven by commercial yellow-badge verified drivers. No hidden charges.
+        </p>
+      </div>
+
+      <div class="fleet-grid" id="fleet-cards-grid">
+        <!-- Rendered dynamically from database -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Popular Outstation Routes from Mumbai -->
+  <section class="section section-bg-light" id="popular-routes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Top Destinations</span>
+        <h2 class="section-title">Popular Outstation Routes from Mumbai</h2>
+        <p class="section-subtitle">
+          Fixed distance routes with quick door-to-door pickup from anywhere in Mumbai, Thane, or Navi Mumbai.
+        </p>
+      </div>
+
+      <div class="routes-grid" id="routes-cards-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Why Choose Piyush Tours and Travels -->
+  <section class="section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Why Travelers Trust Us</span>
+        <h2 class="section-title">Why Choose Piyush Tours and Travels</h2>
+        <p class="section-subtitle">
+          Over 10 years of trusted service providing comfortable and safe cab travel across Maharashtra and western India.
+        </p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="why-card">
+          <div class="why-icon">⏰</div>
+          <h3 class="why-title">100% On-Time Pickup</h3>
+          <p class="why-desc">Our drivers arrive at your doorstep in Mumbai 15 minutes before your scheduled departure time.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✨</div>
+          <h3 class="why-title">Clean &amp; Sanitized Cabs</h3>
+          <p class="why-desc">Every vehicle undergoes deep interior vacuuming and sanitization before every outstation trip.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">👨‍✈️</div>
+          <h3 class="why-title">Verified Highway Chauffeurs</h3>
+          <p class="why-desc">Experienced drivers with background verification and extensive knowledge of expressway routes and ghats.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">💳</div>
+          <h3 class="why-title">Zero Hidden Surprises</h3>
+          <p class="why-desc">Clear per KM billing, transparent driver allowances, and digital toll receipts. What we quote is what you pay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Customer Reviews -->
+  <section class="section section-bg-light" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Customer Experiences</span>
+        <h2 class="section-title">What Our Mumbai Travelers Say</h2>
+        <p class="section-subtitle">
+          Rated 4.9/5 stars based on 1,500+ successful outstation and airport rides.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Booked an Innova Crysta for our family trip from Borivali to Shirdi. The cab was spotless and the driver Sachin was very courteous and drove safely on Samruddhi Mahamarg. Highly recommended!"
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">VS</div>
+            <div>
+              <div class="reviewer-name">Vikas Sawant</div>
+              <div class="reviewer-route">Mumbai to Shirdi (Round Trip)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Great experience with Piyush tours and travels for a business round-trip to Pune. Punctual pickup at 6 AM from Bandra and fair per-km billing with no unnecessary haggling. Will definitely use again."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">AM</div>
+            <div>
+              <div class="reviewer-name">Anand Mehta</div>
+              <div class="reviewer-route">Mumbai to Pune (Sedan One-Way)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "We booked a 17-seater Tempo Traveller for an office weekend retreat to Lonavala. The price calculator gave us exact transparency and the WhatsApp booking took just 2 minutes. Super smooth!"
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">RK</div>
+            <div>
+              <div class="reviewer-name">Rohan Kulkarni</div>
+              <div class="reviewer-route">Mumbai to Lonavala (Tempo Traveller)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" id="contact-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- About Column -->
+        <div class="footer-col footer-about">
+          <h4>Piyush tours and travels</h4>
+          <p>
+            Your trusted car rental and outstation cab partner based in Mumbai. We provide safe, comfortable, and affordable rides across Maharashtra, Gujarat, and Goa.
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <a href="tel:+919820087654" class="btn btn-call btn-sm js-phone-link">📞 Call</a>
+            <a href="https://wa.me/919820087654" target="_blank" class="btn btn-whatsapp btn-sm js-whatsapp-link">💬 WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#instant-calculator">Instant Price Calculator</a></li>
+            <li><a href="#our-fleet">Car Fleet &amp; Rates Per KM</a></li>
+            <li><a href="#popular-routes">Popular Outstation Routes</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="/admin">Owner Admin Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Service Areas in Mumbai -->
+        <div class="footer-col">
+          <h4>Mumbai Service Areas</h4>
+          <ul class="footer-links">
+            <li><a href="#instant-calculator">Mumbai Airport (T1 &amp; T2)</a></li>
+            <li><a href="#instant-calculator">Andheri, Bandra, BKC</a></li>
+            <li><a href="#instant-calculator">Borivali, Goregaon, Malad</a></li>
+            <li><a href="#instant-calculator">Dadar, Colaba, South Mumbai</a></li>
+            <li><a href="#instant-calculator">Thane &amp; Navi Mumbai (Panvel)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Terms -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="icon">📞</span>
+              <div>
+                <strong>Call Us 24/7:</strong><br>
+                <a href="tel:+919820087654" class="js-phone-link js-phone-text">+91 98200 87654</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon">💬</span>
+              <div>
+                <strong>WhatsApp Booking:</strong><br>
+                <span>Instant confirmation on WhatsApp</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon">📍</span>
+              <div>
+                <strong>Head Office:</strong><br>
+                <span>Western Express Highway, Andheri East, Mumbai 400069</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-terms-box">
+            <strong>Important Rental Terms:</strong><br>
+            Toll charges, state entry taxes, and parking fees are extra at actuals. 1 day means calendar day (6:00 AM to 11:59 PM). Driver allowance is ₹400/day.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Piyush tours and travels</strong>. All Rights Reserved. Mumbai, Maharashtra.
+        </div>
+        <div>
+          <a href="/admin" class="admin-login-link">
+            <span>🔐</span> Admin Login Portal
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919820087654" target="_blank" class="fab-btn fab-whatsapp js-whatsapp-link" title="Chat on WhatsApp">
+      💬
+    </a>
+    <a href="tel:+919820087654" class="fab-btn fab-call js-phone-link" title="Call Piyush Tours & Travels">
+      📞
+    </a>
+  </div>
+
+  <!-- Booking Confirmation Modal -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeBookingModal()">✕</button>
+      
+      <div class="modal-icon-badge success">✓</div>
+      <h3 class="modal-title">Booking Request Received!</h3>
+      <p class="modal-text">
+        Thank you for choosing <strong>Piyush tours and travels</strong>. Your trip inquiry has been recorded and our team is preparing your cab details.
+      </p>
+
+      <div class="booking-summary-list" id="modal-booking-summary">
+        <!-- Filled dynamically -->
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" target="_blank" id="modal-whatsapp-btn" class="btn btn-whatsapp" style="width:100%; padding:12px; font-weight:800;">
+          <span>💬</span> Confirm &amp; Chat on WhatsApp Now
+        </a>
+        <button class="btn btn-outline" style="width:100%;" onclick="closeBookingModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bodyInnova" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="glassInnova" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadowInnova" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="9" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <!-- Road Shadow -->
+  <ellipse cx="240" cy="190" rx="215" ry="14" fill="#0f172a" opacity="0.25"/>
+  <!-- Roof Spoiler & Shark Fin -->
+  <path d="M52,65 L60,60 L75,65 Z" fill="#64748b"/>
+  <path d="M110,48 L118,38 L126,48 Z" fill="#475569"/>
+  <g filter="url(#shadowInnova)">
+    <!-- Innova Crysta Aggressive Premium MUV Silhouette -->
+    <path d="M55,148 L58,80 L75,65 L150,48 L330,48 L378,88 L420,118 L430,148 L55,148 Z" fill="url(#bodyInnova)" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Deep Tinted Glass Windows -->
+    <path d="M152,54 L225,54 L225,95 L118,95 Z" fill="url(#glassInnova)"/>
+    <path d="M234,54 L305,54 L305,95 L234,95 Z" fill="url(#glassInnova)"/>
+    <path d="M312,54 L365,84 L365,95 L312,95 Z" fill="url(#glassInnova)"/>
+    <path d="M78,95 L108,95 L108,72 L82,75 Z" fill="url(#glassInnova)"/>
+    <!-- Chrome Trim around windows -->
+    <path d="M115,96 L368,96" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Door lines -->
+    <line x1="230" y1="54" x2="230" y2="148" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="308" y1="54" x2="308" y2="148" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Premium Chrome Door Handles -->
+    <rect x="270" y="106" width="24" height="5" rx="2.5" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <rect x="195" y="106" width="24" height="5" rx="2.5" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <!-- Bold Innova Front Grill & LED Projector Headlamp -->
+    <path d="M400,115 L428,122 L422,138 L395,130 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <line x1="400" y1="122" x2="422" y2="128" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Taillight -->
+    <path d="M58,80 L72,82 L70,128 L56,128 Z" fill="#ef4444"/>
+    <!-- Yellow Plate -->
+    <rect x="408" y="140" width="20" height="6" rx="1" fill="#facc15" stroke="#000" stroke-width="0.5"/>
+    <!-- High Ground Clearance Wheels & Diamond Cut Alloys -->
+    <circle cx="125" cy="155" r="33" fill="#1e293b"/>
+    <circle cx="125" cy="155" r="23" fill="#cbd5e1"/>
+    <circle cx="125" cy="155" r="14" fill="#1e293b"/>
+    <!-- Diamond Cut Spokes -->
+    <line x1="125" y1="135" x2="125" y2="175" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="105" y1="155" x2="145" y2="155" stroke="#f8fafc" stroke-width="2"/>
+    <circle cx="125" cy="155" r="5" fill="#ca8a04"/>
+    <circle cx="350" cy="155" r="33" fill="#1e293b"/>
+    <circle cx="350" cy="155" r="23" fill="#cbd5e1"/>
+    <circle cx="350" cy="155" r="14" fill="#1e293b"/>
+    <line x1="350" y1="135" x2="350" y2="175" stroke="#f8fafc" stroke-width="2"/>
+    <line x1="330" y1="155" x2="370" y2="155" stroke="#f8fafc" stroke-width="2"/>
+    <circle cx="350" cy="155" r="5" fill="#ca8a04"/>
+  </g>
+</svg>
